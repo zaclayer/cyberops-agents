@@ -84,7 +84,7 @@ export async function runAgent(
 }`;
 
   const response = await client.messages.create({
-    model: "claude-sonnet-4-6-20250514",
+    model: "claude-3-5-sonnet-20241022",
     max_tokens: 4096,
     system: systemPrompt,
     messages: [{ role: "user", content: userMessage }],
